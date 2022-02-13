@@ -1,0 +1,66 @@
+---
+title: "Final Project Step 1"
+author: "Kaylar Fullington"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# The Reasearch Topic
+
+## Predicting Unemployment in a Pandemic
+In 2020 when the Covid-19 pandemic first hit the United States, unemployment sky-rocketed. If a future pandemic hits, it could be useful to predict what kind of characteristics place a given individual at risk of job-loss. If we knew the most vulnerable populations, we could enact policy ahead of time that would allow those people to continue to be gainfully employed. Data Science could allow us to predict what types of people would lose jobs and use limited financial resources to efficiently and effectively boost employment in a time of high volatility.
+
+### Research Questions
+1. What racial demographics are most vulnerable to job loss in a pandemic? Were there any employment gains among a given group?
+2. What gender demographics are most vulnerable to job loss in a pandemic? Were there any employment gains among a given group?
+3. What age demographics are most vulnerable to job loss in a pandemic? Were there any employment gains among a given group?
+4. What industries are most likely to have high unemployment in a pandemic? Did unemployment decrease for any industry?
+5. What was the average duration of unemployment for each given group during the pandemic?
+
+### Approach
+I will perform various transformations on the data sets below. This includes searching for potential correlation between any of the above variables and job loss potential, and assessing whether those correlations are significant. There are many factors to consider when attempting to predict unemployment, so it will be crucial to control for those factors. After assessing the correlations, I will create linear regression models to determine if I can predict the likelihood of unemployment based on any of the characteristics above. Additionally, I will make graphs to make the impacts of each variable easy to understand.
+
+
+### Potential Efficacy of Approach
+The approach described above will directly aid in the prediction of unemployment during a pandemic that is similar to Covid-19. Understanding the relationships between various variables and unemployment should help us accomplish this goal.
+
+
+## The Data
+
+### The Data Sets
+[2019 Anuual Averages - Household Data - Tables from Employment and Earnings](https://www.bls.gov/cps/cps_aa2019.htm)  
+[2020 Annual Averages - Household Data - Tables from Employment and Earnings](https://www.bls.gov/cps/cps_aa2020.htm)  
+[2021 Current Population Survey](https://www.bls.gov/cps/tables.htm#charunem)  
+
+**Original Source**  
+U.S. Bureau of Labor Statistics  
+This data was collected for the purpose of describing employment status and other chracteristics of the majority of the United States population.  
+I have elected to download all 57 tables for each year, which altogether describe racial demographics, employment status, industry of occupation, and gender demographics, among other things.  
+I have not been able to find any missing data sources in my overview, but I suspect that they have removed flawed data.
+
+
+### Required Packages
+
+* ggm
+* ggplot2
+* Hmisc
+* Polycor
+* Rcmdr
+* car
+* QuantPsyc
+* boot
+
+
+
+### Plots and Table Needs
+
+* Histograms
+* Scatter Plots
+* Linear Regression Plots
+
+## Future Steps
+
+I have not yet learned logistic regression and machine learning concepts, which could be useful in the final draft of my project.
